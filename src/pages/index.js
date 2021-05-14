@@ -1,5 +1,6 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import './styles.css'
 
 import Seo from "../components/seo"
 
@@ -22,6 +23,8 @@ const IndexPage = () => (
       formats={["AUTO", "WEBP", "AVIF"]}
       alt="Matt's Logo"
       style={{ marginBottom: `1.45rem` }}
+      backgroundColor={'#4AE1BA'}
+      placeholder={'none'}
     />
   </div >
 )
