@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#4AE1BA`,
         theme_color: `#4AE1BA`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon-32x32.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-gatsby-cloud`,
@@ -36,11 +36,12 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `limelight`,
+          `Fjalla One`,
           `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
         ],
         display: 'swap'
       }
-    }
+    },
+    `gatsby-plugin-styled-components`
   ],
 }
