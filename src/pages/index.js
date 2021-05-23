@@ -7,7 +7,7 @@ import Introduction from '../sections/Introduction';
 const IndexPage = () => (
   <>
     <Seo title="Matt Hunter-King" />
-    <Introduction />
+    <Introduction backgroundColor="#4AE1BA" />
   </>
 )
 

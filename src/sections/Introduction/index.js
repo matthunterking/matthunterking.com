@@ -1,18 +1,11 @@
 import React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
 
+import Section from '../../containers/Section';
 import IconLink from '../../components/IconLink';
 
-const Introduction = () => (
- <div style={{
-  display: "flex",
-  justifyContent: 'center',
-  flexDirection: 'column',
-  alignItems: 'center',
-  height: '100vh',
-  backgroundColor: '#4AE1BA',
-  fontFamily: '"Fjalla One", sans-serif'
- }}>
+const Introduction = ({ backgroundColor }) => (
+ <Section backgroundColor={backgroundColor}>
   <h1>Matt Hunter-King</h1>
   <h2>Developer</h2>
   <StaticImage
@@ -20,7 +13,7 @@ const Introduction = () => (
    formats={["AUTO", "WEBP", "AVIF"]}
    alt="Matt's Logo"
    style={{ marginBottom: `3rem` }}
-   backgroundColor={'#4AE1BA'}
+   backgroundColor={backgroundColor}
    placeholder={'none'}
   />
   <div style={{
@@ -43,7 +36,7 @@ const Introduction = () => (
     iconName='github'
    />
   </div>
- </div>
+ </Section>
 );
 
 export default Introduction;
