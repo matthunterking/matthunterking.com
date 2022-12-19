@@ -1,0 +1,53 @@
+body {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: #4AE1BA;
+ height: 100vh;
+ flex-direction: column;
+ text-align: center;
+ margin: 0;
+ position: relative;
+ font-family: Verdana;
+ width: 100%;
+}
+
+h1 {
+ font-size: 25px;
+}
+
+h2 {
+ font-size: 20px;
+}
+
+.devicesContainer {
+ display: flex;
+ justify-content: space-around;
+ position: relative;
+ margin-top: 3rem;
+ width: 100%;
+}
+
+@media only screen and (min-width:961px) {
+ .devicesContainer {
+  width: 25%;
+ }
+}
+
+.device {
+ padding: 0.5rem;
+}
+
+.deviceIcon {
+ width: 60px;
+}
+
+a {
+ text-decoration: none;
+ color: black;
+ border: 3px solid #FFFFFF;
+ padding: 1rem;
+ width: 25%;
+ margin-bottom: 1rem;
+ border-radius: 10px;
+}
